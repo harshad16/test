@@ -1,0 +1,14 @@
+check:
+  - thoth-precommit
+  - thoth-build
+build:
+  build-stratergy: "Dockerfile"
+  registry: "quay.io"
+  registry-org: "harshad16"
+  registry-project: "test"
+  registry-secret: "thoth-station-thoth-pusher-secret"
+# deploy:
+#   project-org: "harshad16"
+#   project-name: "thoth-application"
+#   image-name: "test"
+#   overlay-contextpath: "test/overlays/test/imagestreamtag.yaml"
