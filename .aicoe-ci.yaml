@@ -2,12 +2,21 @@ check:
   - thoth-precommit
   - thoth-build
 build:
-  build-stratergy: "Dockerfile"
-  registry: "quay.io"
-  registry-org: "harshad16"
-  registry-project: "test"
-  registry-secret: "thoth-station-thoth-pusher-secret"
-  custom-tag: "latest"
+  build-stratergy: Source
+  build-source-script: "image:///opt/app-root/builder"
+  base-image: quay.io/thoth-station/s2i-custom-notebook:latest
+  custom-tag: latest
+  registry: quay.io
+  registry-org: harshad16
+  registry-project: test
+  registry-secret: thoth-station-thoth-pusher-secret
+
+  # build-stratergy: "Dockerfile"
+  # registry: "quay.io"
+  # registry-org: "harshad16"
+  # registry-project: "test"
+  # registry-secret: "thoth-station-thoth-pusher-secret"
+  # custom-tag: "latest"
 # deploy:
 #   project-org: "harshad16"
 #   project-name: "thoth-application"
