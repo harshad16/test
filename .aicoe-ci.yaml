@@ -8,7 +8,7 @@ build:
   custom-tag: latest
   registry: quay.io
   registry-org: harshad16
-  registry-project: test
+  registry-project: s2i-test-notebook
   registry-secret: thoth-station-thoth-pusher-secret
 
   # build-stratergy: "Dockerfile"
