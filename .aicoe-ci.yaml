@@ -3,8 +3,7 @@ check:
   - thoth-build
 build:
   build-stratergy: Source
-  build-source-script: "image:///opt/app-root/builder"
-  base-image: quay.io/thoth-station/s2i-custom-py38-notebook:latest
+  base-image: quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.29.0
   custom-tag: latest
   registry: quay.io
   registry-org: harshad16
